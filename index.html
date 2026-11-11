@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-for-Developers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js"></script>
+
+</head>
+<body class=" bg-bc text-fond">
+    <!-- ===============NAVBAR=================-->
+    <nav>
+        <div class="navbar flex items-center justify-between px-5 py-3 md:px-8">
+            <a href="#acceuil" class="font-ff text-2xl md:text-[30px]">MOUSSA NDOYE</a>
+            <ul class="font-fi flex justify-between gap-4 md:gap-5">
+                <li><a href="#projets">Project</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>        
+    </nav>
+    <!-- ============================HEADER======================-->
+
+    <header id="acceuil" class="flex flex-col gap-10 px-5 py-10 md:px-10 lg:flex-row lg:items-center lg:justify-between lg:px-[92px]">
+        <div class="lg:w-1/2">
+            <h1 class="font-ff text-6xl leading-none sm:text-7xl lg:text-[90px]">
+                <span class="block">hi, iam</span>
+                <span class="block md:pl-[30px]">Moussa Ndoye.</span></h1>
+            <p class="font-fo mt-6 text-fond2 md:pl-[30px] md:text-lg">Un développeur front-end basé à Dakar, passionné par la création de sites web accessibles et conviviaux.</p>
+            <div class="mt-8 flex flex-wrap items-center gap-3 md:pl-[30px]">
+                <a class="rounded-full bg-bb text-fond5 px-5 py-3 text-base" href="#contact">contactez-moi <i class="fa-solid fa-circle"></i></a>
+                <a href="#" aria-label="Linkdin" class="flex bg-ba rounded-full items-center justify-center text-fond4 text-xl h-11 w-11"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a  href="#" aria-label="Githup" class="flex bg-ba rounded-full items-center justify-center text-fond4 text-xl h-11 w-11"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div>
+            <img class=" rounded-2xl object-cover" src="images/image.png" alt="ceo">
+        </div>
+    </header>
+
+    <!-- ==============================1ere Section PROJECT ==========================-->
+    
+    <hr class="mt-[20px] border-ba">
+    
+    <section id="projets" class="px-5 py-10 md:px-10 lg:px-[92px] mt-12">
+  
+            <h2 class="font-ff text-5xl leading-none sm:text-7xl lg:text-[90px]">Projets mis en avant</h2>
+            <p class="font-fo text-fond2 mt-4 max-w-md">Voici une sélection de projets qui illustrent ma passion pour le développement front-end.</p>
+        
+        <div class="mt-12 flex flex-col gap-8 rounded-2xl pl-6 lg:flex-row lg:items-center lg:gap-12 bg-bc">
+            
+            <div class="flex items-center justify-center rounded-2xl bg-ba p-6 lg:w-1/2 lg:aspect-square">
+                <img class="rounded-2xl " src="images/work.png" alt="work">
+            </div>
+            
+            <div class=" font-fo lg:w-1/2">
+                <h3 class="text-2xl leading-tight md:text-3xl ">Page de destination promotionnelle pour notre émission préférée</h3>
+                <p class="font-fo mt-6 text-fond2 md:text-lg">J’ai collaboré avec un designer pour donner vie à une page web promotionnelle dédiée à notre série préférée, Adventure Time. J’ai livré un design entièrement responsive avec des contenus dynamiques, intégrant de manière fluide une fonctionnalité d’abonnement à la newsletter afin de tenir les fans informés des dernières aventures.</p>
+                    <p class="mt-8 text-sm uppercase">Informations sur le projet</p>
+                        <dl class="mt-3 ">
+                            <div class="flex justify-between border-t border-ba py-3">
+                                <dt>Année </dt>
+                                <dd>2023</dd>
+                            </div>
+                            <div class="flex justify-between border-t border-ba py-3">
+                                <dt>Role</dt>
+                                <dd>Dévellopeur front-end </dd>
+                            </div>
+                        </dl>
+                    <div class="border-t border-ba flex uppercase text-fond4 gap-10">
+                        <a href="#" class="inline-flex items-center gap-2 underline underline-offset-4 mt-3">Démo<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="inline-flex items-center gap-2 underline underline-offset-4 mt-3">Githup<i class="fa-brands fa-github"></i></a>
+                    </div>
+            </div>
+        </div>
+
+        <!-- ============================2eme Section===============================-->
+
+
+        <div class="mt-12 flex flex-col gap-8 rounded-2xl pl-6 lg:flex-row lg:items-center lg:gap-12 bg-bc">
+            
+            <div class="flex items-center justify-center rounded-2xl bg-ba p-6 lg:w-1/2 lg:aspect-square">
+                <img class="rounded-2xl " src="images/image 10.png" alt="work">
+            </div>
+            
+            <div class=" font-fo lg:w-1/2">
+                <h3 class="text-2xl leading-tight md:text-3xl ">blog pour l’actualité mondiale</h3>
+                <p class="font-fo mt-6 text-fond2 md:text-lg">J’ai maîtrisé les complexités de CSS Grid pour créer une page d’accueil innovante pour un site d’actualités, en prenant des décisions de design complexes afin d’assurer une expérience utilisateur fluide. Ce projet m’a permis de renforcer mes compétences en développement front-end.</p>
+                    <p class="mt-8 text-sm uppercase">Informations sur le projet</p>
+                        <dl class="mt-3 ">
+                            <div class="flex justify-between border-t border-ba py-3">
+                                <dt> Client</dt>
+                                <dd>Webs news</dd>
+                            </div>
+                            <div class="flex justify-between border-t border-ba py-3">
+                                <dt>année</dt>
+                                <dd> 2022</dd>
+                            </div>
+                            <div class="flex justify-between border-t border-ba py-3">
+                                <dt>Role</dt>
+                                <dd>Dévellopeur front-end </dd>
+                            </div>
+                        </dl>
+                    <div class="border-t border-ba flex uppercase text-fond4 gap-10">
+                        <a href="#" class="inline-flex items-center gap-2 underline underline-offset-4 mt-3">Démo<i class="fa-solid fa-arrow-up-right-from-square"></i></a>                    </div>
+            </div>
+        </div>
+
+        <!-- ===================================3eme SECTION ============================-->
+
+                <div class="mt-12 flex flex-col gap-8 rounded-2xl pl-6 lg:flex-row lg:items-center lg:gap-12 bg-bc">
+            
+            <div class="flex items-center justify-center rounded-2xl bg-ba p-6 lg:w-1/2 lg:aspect-square">
+                <img class="rounded-2xl " src="images/image9.png" alt="work">
+            </div>
+            
+            <div class=" font-fo lg:w-1/2">
+                <h3 class="text-2xl leading-tight md:text-3xl ">Page produit pour site e-commerce</h3>
+                <p class="font-fo mt-6 text-fond2 md:text-lg">J’ai conçu avec succès une page produit attrayante, intégrant une galerie dynamique en lightbox et un panier fonctionnel fluide, démontrant ma maîtrise du développement en JavaScript.</p>
+                    <p class="mt-8 text-sm uppercase">Informations sur le projet</p>
+                        <dl class="mt-3 ">
+                            <div class="flex justify-between border-t border-ba py-3">
+                                <dt>année</dt>
+                                <dd> 2022</dd>
+                            </div>
+                            <div class="flex justify-between border-t border-ba py-3">
+                                <dt>Role</dt>
+                                <dd>Dévellopeur front-end </dd>
+                            </div>
+                        </dl>
+                    <div class="border-t border-ba flex uppercase text-fond4 gap-10">
+                        <a href="#" class="inline-flex items-center gap-2 underline underline-offset-4 mt-3">Démo<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="inline-flex items-center gap-2 underline underline-offset-4 mt-3">Githup<i class="fa-brands fa-github"></i></a>                    </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <hr class="mt-[20px] border-ba">
+
+    <!-- ================================A PROPOS===============================-->
+
+    <section id="apropos" class="px-5 py-10 md:px-10 lg:px-[92px] gap-8 mt-12 flex lg:flex-row lg:gap-16 flex-col">
+        <div class="lg:shrink-0">
+            <h2 class="font-ff text-6xl leading-none sm:text-7xl sm:text-7xl lg:whitespace-nowrap lg:text-[90px]">À propos de moi</h2>
+        </div>
+            <div class="">
+                <h2 class="text-2xl leading-tight md:text-3xl ">Je suis développeur front-end basé à DAKAR, avec une formation en génie Informatique.</h2>
+                <p class="font-fo mt-6 text-fond2 md:text-lg">Je suis développeur front-end basé à Dakar, à la recherche d’opportunités stimulantes. Avec une formation en génie informatique, je mets un point d’honneur à privilégier l’accessibilité lors du développement. Passionné et curieux, j’aime résoudre des problèmes complexes.
+                    Actuellement, j’explore React.js, Laravel et m’initie également au design. En dehors du codage, j’apprécie jouer au football, la photographie et jouer à la carte. Je continue d’apprendre pour améliorer constamment mes compétences.</p>
+                <a href="apropos.html" class=" text-fond4 inline-flex items-center underline underline-offset-4 mt-3 text-sm uppercase">En savoir plus sur moi </a>
+            </div>
+    </section>
+
+    <hr class="mt-[20px] border-ba">
+
+    <!-- ======================================CONTACT=============================-->
+
+    <section id="contact" class="mt-12 flex flex-col gap-8 px-5 py-10 md:px-10 lg:flex-row lg:gap-16 lg:px-[92px]">
+        <div class=" flex flex-col lg:shrink-0 ">
+            <h2 class="font-ff text-6xl leading-none sm:text-7xl sm:text-7xl lg:text-[90px]">Entrons en contact</h2>
+            <p class="font-fo text-fond2 mt-6 max-w-md mt-6">Dites bonjour à <a class="text-fond4 underline underline-offset-4 border-xl border-b" href="mailto:moussandoye@gmail.com">moussandoye@gmail.com</a> Pour en savoir plus, voici mon ...  </p>
+            <div class="flex gap-8 mt-6 text-fond4">
+            <a href="#" class="text-fond4 text-2xl"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="" class="text-fond4 text-2xl"><i class="fa-brands fa-github"></i></a>
+            <a href="" class="text-fond4 text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" class="text-fond4 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        <div class="mt-auto">
+            <p>© 2023 Moussa Ndoye</p>
+        </div>
+        </div>
+        
+            <form action="" method="post" class="font-fo flex flex-col gap-5 lg:w-1/2"> 
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" required class="h-12 w-full rounded-lg bg-ba px-4 ">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="h-12 w-full rounded-lg bg-ba px-4 ">
+                
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" name="sujet" class="h-12 w-full rounded-lg bg-ba px-4 ">
+                
+                <div>
+                <label for="message">Message</label>
+                <textarea type="text" rows="6" id="message" name="msg" class="bg-ba w-full rounded-lg mt-3"></textarea>
+                </div>
+                
+                <div>
+                <button class="rounded-full bg-bb px-6 py-3 text-base text-fond5 p-4" type="submit">Envoyer</button>
+                </div>
+            </form>
+            
+    </section>        
+
+
+
+    
+    
+
+
+
+</body>
+</html>
