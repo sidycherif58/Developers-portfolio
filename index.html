@@ -14,19 +14,65 @@
     <script src="./tailwind.js"></script>
 
 </head>
+
 <body class=" bg-bc text-fond">
     <!-- ===============NAVBAR=================-->
-    <nav>
-        <div class="navbar flex items-center justify-between px-5 py-3 md:px-8">
-            <a href="#acceuil" class="font-ff text-2xl md:text-[30px]">MOUSSA NDOYE</a>
-            <ul class="font-fi flex justify-between gap-4 md:gap-5">
-                <li><a href="#projets">Project</a></li>
-                <li><a href="#apropos">A propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>        
+    <nav class="flex justify-between items-center px-5 py-3 md:px-8">
+        <a href="#acceuil" class="font-ff text-2xl">Moussa ndoye</a>
+
+        <ul class="flex gap-5 font-fi text-base hidden md:flex">
+            <li><a href="#projets">Project</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <button id="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" class="text-2xl text-fond2 md:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
     </nav>
-    <!-- ============================HEADER======================-->
+
+    <div id="overlay" class="z-40 fixed hidden  md:hidden fixed inset-0 bg-ba/60"></div>
+
+    <aside id="side-menu"
+     class="h-full w-64 fixed right-0 md:hidden bg-ba top-0 z-50 translate-x-full transition-transform duration-300 ">
+
+     <button id="close-btn" type="button" class="mb-8 text-2xl text-fond2 md-hidden border rounded-full border-bi h-11 w-11 ms-3 mt-3">
+        <i class="fa-solid fa-xmark"></i>
+     </button>
+        
+        <ul class="flex flex-col gap-8 font-fi text-base mt-3 ps-3">
+            <li class="border-b border-bi pb-4"><a href="#projets">Project</a></li>
+            <li class="border-b border-bi pb-4"><a href="#apropos">A propos</a></li>
+            <li class="border-b border-bi pb-4"><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
+    
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const sideMenu = document.getElementById("side-menu");
+        const overlay = document.getElementById("overlay");
+
+        function openMenu () {
+            sideMenu.classList.remove('translate-x-full');
+            overlay.classList.remove('hidden');
+            menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        function closeMenu () {
+            sideMenu.classList.add('translate-x-full');
+            sideMenu.classList.add('translate-x-full'); 
+            overlay.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        }
+            menuBtn.addEventListener('click', openMenu);
+            closeBtn.addEventListener('click', closeMenu);
+            overlay.addEventListener('click', closeMenu);
+
+            sideMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));         
+    </script>
+    
+     <!-- ============================HEADER======================-->
 
     <header id="acceuil" class="flex flex-col gap-10 px-5 py-10 md:px-10 lg:flex-row lg:items-center lg:justify-between lg:px-[92px]">
         <div class="lg:w-1/2">
@@ -205,6 +251,7 @@
 
     
     
+
 
 
 
